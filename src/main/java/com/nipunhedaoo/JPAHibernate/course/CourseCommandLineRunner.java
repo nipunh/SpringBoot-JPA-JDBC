@@ -31,5 +31,7 @@ public class CourseCommandLineRunner implements CommandLineRunner {
         System.out.println(jpaRepository.findById(1));
 
         System.out.println( "Total number of entries :" + courseSpringDataJpaRepository.count());
+        System.out.println( courseSpringDataJpaRepository.findByAuthor("nipunhedaoo"));
+
     }
 }
